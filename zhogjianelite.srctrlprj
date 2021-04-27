@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <source_groups>
+        <source_group_c05964fb-e0f5-4d45-8daa-db7bf0851879>
+            <exclude_filters>
+                <exclude_filter>./</exclude_filter>
+            </exclude_filters>
+            <java_standard>8</java_standard>
+            <maven>
+                <project_file_path>pom.xml</project_file_path>
+                <settings_file_path>C:/Program Files/apache-maven-3.6.3/conf/settings.xml</settings_file_path>
+                <should_index_tests>0</should_index_tests>
+            </maven>
+            <name>Java Source Group from Maven</name>
+            <source_extensions>
+                <source_extension>.java</source_extension>
+                <source_extension>.xml</source_extension>
+            </source_extensions>
+            <status>enabled</status>
+            <type>Java Source Group from Maven</type>
+        </source_group_c05964fb-e0f5-4d45-8daa-db7bf0851879>
+    </source_groups>
+    <version>8</version>
+</config>
