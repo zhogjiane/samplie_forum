@@ -4,6 +4,12 @@ import life.zhogjiane.community.model.User;
 import lombok.Data;
 
 
+/**
+ * 评论dto
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Data
 public class CommentDTO {
     private Long id;

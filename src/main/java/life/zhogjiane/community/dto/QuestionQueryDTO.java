@@ -3,6 +3,12 @@ package life.zhogjiane.community.dto;
 import lombok.Data;
 
 
+/**
+ * 问题查询dto
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Data
 public class QuestionQueryDTO {
     private String search;

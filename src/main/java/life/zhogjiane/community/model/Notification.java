@@ -1,5 +1,11 @@
 package life.zhogjiane.community.model;
 
+/**
+ * 通知
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public class Notification {
     /**
      *

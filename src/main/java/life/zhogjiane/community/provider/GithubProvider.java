@@ -8,7 +8,11 @@ import okhttp3.*;
 import org.springframework.stereotype.Component;
 
 /**
+ * github提供者
  * Created by codedrinker on 2019/4/24.
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
  */
 @Component
 @Slf4j

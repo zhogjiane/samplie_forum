@@ -6,7 +6,11 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
+ * 网络配置
  * Created by codedrinker on 2019/5/16.
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
  */
 @Configuration
 

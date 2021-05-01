@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * 分页dto
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Data
 public class PaginationDTO<T> {
     private List<T> data;

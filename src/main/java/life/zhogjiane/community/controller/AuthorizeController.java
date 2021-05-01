@@ -18,6 +18,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
 
+/**
+ * 授权控制器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Controller
 @Slf4j
 public class AuthorizeController {
@@ -25,12 +31,15 @@ public class AuthorizeController {
     @Autowired
     private GithubProvider githubProvider;
 
+
+
+//      配置上github 的id
     @Value("${github.client.id}")
     private String clientId;
-
+//      配置上github的密钥
     @Value("${github.client.secret}")
     private String clientSecret;
-
+//     配置上 github的返回地址
     @Value("${github.redirect.uri}")
     private String redirectUri;
 

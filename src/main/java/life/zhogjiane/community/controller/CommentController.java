@@ -17,6 +17,12 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 
+/**
+ * 评论控制器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Controller
 public class CommentController {
 

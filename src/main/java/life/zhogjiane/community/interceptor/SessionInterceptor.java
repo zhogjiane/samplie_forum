@@ -20,6 +20,12 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 
+/**
+ * 会话拦截器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Service
 public class SessionInterceptor implements HandlerInterceptor {
 

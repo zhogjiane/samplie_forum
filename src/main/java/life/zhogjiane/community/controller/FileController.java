@@ -13,6 +13,12 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import javax.servlet.http.HttpServletRequest;
 
 
+/**
+ * 文件控制器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Controller
 @Slf4j
 public class FileController {

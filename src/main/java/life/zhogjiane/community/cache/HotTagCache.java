@@ -10,7 +10,12 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 
-
+/**
+ * 热门标签缓存
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Component
 @Data
 public class HotTagCache {

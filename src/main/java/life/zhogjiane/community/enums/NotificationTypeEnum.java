@@ -1,6 +1,12 @@
 package life.zhogjiane.community.enums;
 
 
+/**
+ * 通知类型的枚举
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public enum NotificationTypeEnum {
     REPLY_QUESTION(1, "回复了问题"),
     REPLY_COMMENT(2, "回复了评论");

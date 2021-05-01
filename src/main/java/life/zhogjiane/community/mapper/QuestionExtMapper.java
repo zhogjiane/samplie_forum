@@ -5,6 +5,12 @@ import life.zhogjiane.community.model.Question;
 
 import java.util.List;
 
+/**
+ * 问题ext映射器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public interface QuestionExtMapper {
     int incView(Question record);
 

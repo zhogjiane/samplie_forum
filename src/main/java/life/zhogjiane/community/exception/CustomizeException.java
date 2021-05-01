@@ -1,6 +1,12 @@
 package life.zhogjiane.community.exception;
 
 
+/**
+ * 自定义异常
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public class CustomizeException extends RuntimeException {
     private String message;
     private Integer code;

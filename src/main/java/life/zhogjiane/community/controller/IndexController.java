@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+/**
+ * 指数控制器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Controller
 public class IndexController {
 

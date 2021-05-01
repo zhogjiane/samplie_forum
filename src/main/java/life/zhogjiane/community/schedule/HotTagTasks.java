@@ -14,6 +14,12 @@ import org.springframework.stereotype.Component;
 import java.util.*;
 
 
+/**
+ * 热门标签任务
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Component
 @Slf4j
 public class HotTagTasks {

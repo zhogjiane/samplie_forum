@@ -16,6 +16,12 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
+/**
+ * 自定义异常处理程序
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @ControllerAdvice
 @Slf4j
 public class CustomizeExceptionHandler {

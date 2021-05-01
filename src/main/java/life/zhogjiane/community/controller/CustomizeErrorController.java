@@ -11,6 +11,12 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 
 
+/**
+ * 自定义错误控制器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Controller
 @RequestMapping("${server.error.path:${error.path:/error}}")
 public class CustomizeErrorController implements ErrorController {

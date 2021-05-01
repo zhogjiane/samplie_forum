@@ -5,6 +5,12 @@ import life.zhogjiane.community.exception.CustomizeException;
 import lombok.Data;
 
 
+/**
+ * 结果dto
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Data
 public class ResultDTO<T> {
     private Integer code;

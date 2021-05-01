@@ -1,6 +1,12 @@
 package life.zhogjiane.community.exception;
 
 
+/**
+ * 自定义错误代码
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public enum CustomizeErrorCode implements ICustomizeErrorCode {
 
     QUESTION_NOT_FOUND(2001, "你找到问题不在了，要不要换个试试？"),

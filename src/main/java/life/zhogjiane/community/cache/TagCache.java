@@ -9,6 +9,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
+/**
+ * 标签缓存
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public class TagCache {
     public static List<TagDTO> get() {
         List<TagDTO> tagDTOS = new ArrayList<>();

@@ -1,5 +1,11 @@
 package life.zhogjiane.community.model;
 
+/**
+ * 广告
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public class Ad {
     /**
      *

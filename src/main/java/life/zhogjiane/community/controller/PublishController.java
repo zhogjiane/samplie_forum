@@ -17,6 +17,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 
 
+/**
+ * 发布控制器
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Controller
 public class PublishController {
 

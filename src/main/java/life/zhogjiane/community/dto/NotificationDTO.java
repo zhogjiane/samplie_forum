@@ -3,6 +3,12 @@ package life.zhogjiane.community.dto;
 import lombok.Data;
 
 
+/**
+ * 通知dto
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 @Data
 public class NotificationDTO {
     private Long id;

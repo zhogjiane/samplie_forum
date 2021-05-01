@@ -1,6 +1,12 @@
 package life.zhogjiane.community.enums;
 
 
+/**
+ * 注释类型的枚举
+ *
+ * @author zhogjiane
+ * @date 2021/05/01
+ */
 public enum CommentTypeEnum {
     QUESTION(1),
     COMMENT(2);
