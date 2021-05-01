@@ -26,6 +26,17 @@ public class IndexController {
     @Autowired
     private HotTagCache hotTagCache;
 
+    /**
+     * 首页
+     *
+     * @param model  模型
+     * @param page   页面
+     * @param size   大小
+     * @param search 搜索
+     * @param tag    标签
+     * @param sort   排序
+     * @return {@link String}
+     */
     @GetMapping("/")
     public String index(Model model,
                         @RequestParam(name = "page", defaultValue = "1") Integer page,

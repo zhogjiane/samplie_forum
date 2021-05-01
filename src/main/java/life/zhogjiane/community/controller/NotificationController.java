@@ -24,6 +24,13 @@ public class NotificationController {
     @Autowired
     private NotificationService notificationService;
 
+    /**
+     * 配置文件
+     *
+     * @param request 请求
+     * @param id      id
+     * @return {@link String}
+     */
     @GetMapping("/notification/{id}")
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "id") Long id) {

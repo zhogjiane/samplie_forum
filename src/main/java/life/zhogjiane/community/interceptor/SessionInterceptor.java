@@ -39,6 +39,15 @@ public class SessionInterceptor implements HandlerInterceptor {
     @Value("${github.redirect.uri}")
     private String redirectUri;
 
+    /**
+     * 前处理
+     *
+     * @param request  请求
+     * @param response 响应
+     * @param handler  处理程序
+     * @return boolean
+     * @throws Exception 异常
+     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //设置 context 级别的属性

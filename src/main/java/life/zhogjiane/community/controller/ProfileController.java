@@ -27,6 +27,16 @@ public class ProfileController {
     @Autowired
     private NotificationService notificationService;
 
+    /**
+     * 配置文件
+     *
+     * @param request 请求
+     * @param action  行动
+     * @param model   模型
+     * @param page    页面
+     * @param size    大小
+     * @return {@link String}
+     */
     @GetMapping("/profile/{action}")
     public String profile(HttpServletRequest request,
                           @PathVariable(name = "action") String action,

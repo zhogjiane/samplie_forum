@@ -46,6 +46,14 @@ public class AuthorizeController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 回调
+     *
+     * @param code     代码
+     * @param state    状态
+     * @param response 响应
+     * @return {@link String}
+     */
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code") String code,
                            @RequestParam(name = "state") String state,
@@ -77,6 +85,13 @@ public class AuthorizeController {
         }
     }
 
+    /**
+     * 注销
+     *
+     * @param request  请求
+     * @param response 响应
+     * @return {@link String}
+     */
     @GetMapping("/logout")
     public String logout(HttpServletRequest request,
                          HttpServletResponse response) {

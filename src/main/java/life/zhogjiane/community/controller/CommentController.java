@@ -29,6 +29,13 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
+    /**
+     * 帖子
+     *
+     * @param commentCreateDTO 评论创建dto
+     * @param request          请求
+     * @return {@link Object}
+     */
     @ResponseBody
     @RequestMapping(value = "/comment", method = RequestMethod.POST)
     public Object post(@RequestBody CommentCreateDTO commentCreateDTO,
@@ -54,6 +61,12 @@ public class CommentController {
         return ResultDTO.okOf();
     }
 
+    /**
+     * 评论
+     *
+     * @param id id
+     * @return {@link ResultDTO<List<CommentDTO>>}
+     */
     @ResponseBody
     @RequestMapping(value = "/comment/{id}", method = RequestMethod.GET)
     public ResultDTO<List<CommentDTO>> comments(@PathVariable(name = "id") Long id) {

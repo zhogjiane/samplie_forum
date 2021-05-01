@@ -8,6 +8,17 @@ package life.zhogjiane.community.exception;
  * @date 2021/05/01
  */
 public interface ICustomizeErrorCode {
+    /**
+     * 得到消息
+     *
+     * @return {@link String}
+     */
     String getMessage() ;
+
+    /**
+     * 获取代码
+     *
+     * @return {@link Integer}
+     */
     Integer getCode();
 }

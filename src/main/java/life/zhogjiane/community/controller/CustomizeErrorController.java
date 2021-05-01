@@ -26,6 +26,13 @@ public class CustomizeErrorController implements ErrorController {
         return "error";
     }
 
+    /**
+     * 错误的html
+     *
+     * @param request 请求
+     * @param model   模型
+     * @return {@link ModelAndView}
+     */
     @RequestMapping(produces = MediaType.TEXT_HTML_VALUE)
     public ModelAndView errorHtml(HttpServletRequest request, Model model) {
         HttpStatus status = getStatus(request);
@@ -40,6 +47,12 @@ public class CustomizeErrorController implements ErrorController {
         return new ModelAndView("error");
     }
 
+    /**
+     * 获取状态
+     *
+     * @param request 请求
+     * @return {@link HttpStatus}
+     */
     private HttpStatus getStatus(HttpServletRequest request) {
         Integer statusCode = (Integer) request
                 .getAttribute("javax.servlet.error.status_code");

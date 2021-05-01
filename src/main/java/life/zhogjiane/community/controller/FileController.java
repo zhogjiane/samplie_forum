@@ -25,6 +25,12 @@ public class FileController {
     @Autowired
     private UCloudProvider uCloudProvider;
 
+    /**
+     * 上传
+     *
+     * @param request 请求
+     * @return {@link FileDTO}
+     */
     @RequestMapping("/file/upload")
     @ResponseBody
     public FileDTO upload(HttpServletRequest request) {

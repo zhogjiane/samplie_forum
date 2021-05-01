@@ -36,6 +36,12 @@ public enum CustomizeErrorCode implements ICustomizeErrorCode {
     private Integer code;
     private String message;
 
+    /**
+     * 自定义错误代码
+     *
+     * @param code    代码
+     * @param message 消息
+     */
     CustomizeErrorCode(Integer code, String message) {
         this.message = message;
         this.code = code;

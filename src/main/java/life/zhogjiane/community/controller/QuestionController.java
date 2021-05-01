@@ -30,6 +30,13 @@ public class QuestionController {
     @Autowired
     private CommentService commentService;
 
+    /**
+     * 金融问题
+     *
+     * @param id    id
+     * @param model 模型
+     * @return {@link String}
+     */
     @GetMapping("/question/{id}")
     public String question(@PathVariable(name = "id") String id, Model model) {
         Long questionId = null;

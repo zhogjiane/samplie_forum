@@ -29,6 +29,13 @@ public class PublishController {
     @Autowired
     private QuestionService questionService;
 
+    /**
+     * 编辑
+     *
+     * @param id    id
+     * @param model 模型
+     * @return {@link String}
+     */
     @GetMapping("/publish/{id}")
     public String edit(@PathVariable(name = "id") Long id,
                        Model model) {
@@ -42,12 +49,29 @@ public class PublishController {
     }
 
 
+    /**
+     * 发布
+     *
+     * @param model 模型
+     * @return {@link String}
+     */
     @GetMapping("/publish")
     public String publish(Model model) {
         model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
+    /**
+     * 发布出去
+     *
+     * @param title       标题
+     * @param description 描述
+     * @param tag         标签
+     * @param id          id
+     * @param request     请求
+     * @param model       模型
+     * @return {@link String}
+     */
     @PostMapping("/publish")
     public String doPublish(
             @RequestParam(value = "title", required = false) String title,
