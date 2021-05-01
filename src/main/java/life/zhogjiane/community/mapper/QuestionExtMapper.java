@@ -2,6 +2,7 @@ package life.zhogjiane.community.mapper;
 
 import life.zhogjiane.community.dto.QuestionQueryDTO;
 import life.zhogjiane.community.model.Question;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @author zhogjiane
  * @date 2021/05/01
  */
+@Mapper
 public interface QuestionExtMapper {
     int incView(Question record);
 
