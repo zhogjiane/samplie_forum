@@ -30,11 +30,14 @@ public class HotTagTasks {
     @Autowired
     private HotTagCache hotTagCache;
 
+    /**
+     * 热门标签计划
+     */
     @Scheduled(fixedRate = 1000 * 60 * 60 * 3)
     public void hotTagSchedule() {
         int offset = 0;
         int limit = 20;
-        log.info("hotTagSchedule start {}", new Date());
+
         List<Question> list = new ArrayList<>();
 
         Map<String, Integer> priorities = new HashMap<>();

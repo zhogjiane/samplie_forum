@@ -42,6 +42,16 @@ public class QuestionService {
     @Autowired
     private UserMapper userMapper;
 
+    /**
+     * 列表
+     *
+     * @param search 搜索
+     * @param tag    标签
+     * @param sort   排序
+     * @param page   页面
+     * @param size   大小
+     * @return {@link PaginationDTO}
+     */
     public PaginationDTO list(String search, String tag, String sort, Integer page, Integer size) {
 
         if (StringUtils.isNotBlank(search)) {
@@ -113,6 +123,14 @@ public class QuestionService {
         return paginationDTO;
     }
 
+    /**
+     * 列表
+     *
+     * @param userId 用户id
+     * @param page   页面
+     * @param size   大小
+     * @return {@link PaginationDTO}
+     */
     public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
 
@@ -158,6 +176,12 @@ public class QuestionService {
         return paginationDTO;
     }
 
+    /**
+     * 通过id
+     *
+     * @param id id
+     * @return {@link QuestionDTO}
+     */
     public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         if (question == null) {
@@ -170,6 +194,11 @@ public class QuestionService {
         return questionDTO;
     }
 
+    /**
+     * 创建或更新
+     *
+     * @param question 问题
+     */
     public void createOrUpdate(Question question) {
         if (question.getId() == null) {
             // 创建
@@ -206,6 +235,11 @@ public class QuestionService {
         }
     }
 
+    /**
+     * 公司的观点
+     *
+     * @param id id
+     */
     public void incView(Long id) {
         Question question = new Question();
         question.setId(id);

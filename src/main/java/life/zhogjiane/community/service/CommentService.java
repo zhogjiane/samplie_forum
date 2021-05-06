@@ -47,6 +47,12 @@ public class CommentService {
     @Autowired
     private NotificationMapper notificationMapper;
 
+    /**
+     * 插入
+     *
+     * @param comment     评论
+     * @param commentator 评论员
+     */
     @Transactional
     public void insert(Comment comment, User commentator) {
         if (comment.getParentId() == null || comment.getParentId() == 0) {
@@ -94,6 +100,16 @@ public class CommentService {
         }
     }
 
+    /**
+     * 创建通知
+     *
+     * @param comment          评论
+     * @param receiver         接收机
+     * @param notifierName     通知人名称
+     * @param outerTitle       外标题
+     * @param notificationType 通知类型
+     * @param outerId          外部id
+     */
     private void createNotify(Comment comment, Long receiver, String notifierName, String outerTitle, NotificationTypeEnum notificationType, Long outerId) {
         if (receiver == comment.getCommentator()) {
             return;
@@ -110,6 +126,13 @@ public class CommentService {
         notificationMapper.insert(notification);
     }
 
+    /**
+     * 通过目标id列表
+     *
+     * @param id   id
+     * @param type 类型
+     * @return {@link List<CommentDTO>}
+     */
     public List<CommentDTO> listByTargetId(Long id, CommentTypeEnum type) {
         CommentExample commentExample = new CommentExample();
         commentExample.createCriteria()

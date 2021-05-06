@@ -20,6 +20,12 @@ public class AdService {
     @Autowired
     private AdMapper adMapper;
 
+    /**
+     * 列表
+     *
+     * @param pos pos
+     * @return {@link List<Ad>}
+     */
     public List<Ad> list(String pos) {
         AdExample navExample = new AdExample();
         navExample.createCriteria()

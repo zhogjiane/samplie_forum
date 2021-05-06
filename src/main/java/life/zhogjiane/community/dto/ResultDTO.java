@@ -32,6 +32,11 @@ public class ResultDTO<T> {
         return errorOf(e.getCode(), e.getMessage());
     }
 
+    /**
+     * 好了的
+     *
+     * @return {@link ResultDTO}
+     */
     public static ResultDTO okOf() {
         ResultDTO resultDTO = new ResultDTO();
         resultDTO.setCode(200);

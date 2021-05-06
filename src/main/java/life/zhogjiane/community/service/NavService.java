@@ -20,6 +20,11 @@ public class NavService {
     @Autowired
     private NavMapper navMapper;
 
+    /**
+     * 列表
+     *
+     * @return {@link List<Nav>}
+     */
     public List<Nav> list() {
         NavExample navExample = new NavExample();
         navExample.createCriteria()

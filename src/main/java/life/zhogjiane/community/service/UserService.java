@@ -20,6 +20,11 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
+    /**
+     * 创建或更新
+     *
+     * @param user 用户
+     */
     public void createOrUpdate(User user) {
         UserExample userExample = new UserExample();
         userExample.createCriteria()

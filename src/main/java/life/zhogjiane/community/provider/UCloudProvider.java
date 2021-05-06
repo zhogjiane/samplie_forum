@@ -68,7 +68,7 @@ public class UCloudProvider {
                         .createUrl();
                 return url;
             } else {
-                log.error("upload error,{}", response);
+
                 throw new CustomizeException(CustomizeErrorCode.FILE_UPLOAD_FAIL);
             }
         } catch (UfileClientException e) {

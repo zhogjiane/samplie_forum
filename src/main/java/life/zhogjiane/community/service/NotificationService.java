@@ -32,6 +32,14 @@ public class NotificationService {
     @Autowired
     private NotificationMapper notificationMapper;
 
+    /**
+     * 列表
+     *
+     * @param userId 用户id
+     * @param page   页面
+     * @param size   大小
+     * @return {@link PaginationDTO}
+     */
     public PaginationDTO list(Long userId, Integer page, Integer size) {
 
         PaginationDTO<NotificationDTO> paginationDTO = new PaginationDTO<>();
@@ -83,6 +91,12 @@ public class NotificationService {
         return paginationDTO;
     }
 
+    /**
+     * 未读计数
+     *
+     * @param userId 用户id
+     * @return {@link Long}
+     */
     public Long unreadCount(Long userId) {
         NotificationExample notificationExample = new NotificationExample();
         notificationExample.createCriteria()
@@ -91,6 +105,13 @@ public class NotificationService {
         return notificationMapper.countByExample(notificationExample);
     }
 
+    /**
+     * 读
+     *
+     * @param id   id
+     * @param user 用户
+     * @return {@link NotificationDTO}
+     */
     public NotificationDTO read(Long id, User user) {
         Notification notification = notificationMapper.selectByPrimaryKey(id);
         if (notification == null) {
