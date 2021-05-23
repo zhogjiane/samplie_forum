@@ -18,7 +18,6 @@ import java.util.UUID;
 
 /**
  * ucloud提供者
- * Created by codedrinker on 2019/6/28.
  *
  * @author zhogjiane
  * @date 2021/05/01

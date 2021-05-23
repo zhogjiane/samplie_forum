@@ -40,7 +40,7 @@ public class HotTagCache {
             }
         });
 
-
+//        排序后的
         List<String> sortedTags = new ArrayList<>();
 
         HotTagDTO poll = priorityQueue.poll();

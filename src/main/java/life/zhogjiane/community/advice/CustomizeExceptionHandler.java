@@ -25,7 +25,7 @@ import java.io.PrintWriter;
 @ControllerAdvice
 @Slf4j
 public class CustomizeExceptionHandler {
-    // TODO make different
+
     @ExceptionHandler(Exception.class)
     ModelAndView handle(Throwable e, Model model, HttpServletRequest request, HttpServletResponse response) {
         String contentType = request.getContentType();

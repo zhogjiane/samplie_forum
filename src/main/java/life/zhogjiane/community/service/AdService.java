@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 广告服务
- * Created by codedrinker on 2019/9/6.
  *
  * @author zhogjiane
  * @date 2021/05/01
